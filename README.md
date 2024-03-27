@@ -63,5 +63,16 @@ Alignment coverage in Linclust was calculated with respect to the target sequenc
 
 All samples are provided to the model with a 1 or 2 character token concatenated at the N-terminal and C-terminal side of the sequence. Each sequence is then provided as-is and flipped. For a given
 batch, proteins are concatenated with others to fill the maximum token length during training.  
+## What is Uniref?
+UniRef (Universal Protein Resource Reference Clusters) provides clustered sets of sequences from the UniProt Knowledgebase (including isoforms) and selected UniParc records. This resource is designed to offer a compact, comprehensive, and non-redundant representation of the UniProt databases. The main goal of UniRef is to reduce the redundancy of sequences in the UniProt databases to speed up sequence searches and analyses while maintaining the coverage of the sequence space.  
 
+UniRef comes in three different cluster sets:  
+
+UniRef100: Combines identical sequences and subfragments (overlapping sequences that are 100% identical) into a single UniRef entry, which represents all underlying sequences. This set is useful for obtaining the complete set of sequences without redundancy but with maximal sequence coverage. 
+
+UniRef90: Clusters UniRef100 entries such that each cluster consists of sequences that have at least 90% sequence identity to, and are 80% the length of, the longest sequence in the cluster. This reduces the dataset size further while still retaining high sequence similarity within clusters. It's a balance between redundancy reduction and sequence diversity.  
+
+UniRef50: Clusters UniRef90 entries to achieve a similar clustering at a 50% sequence identity threshold. This provides an even more compressed dataset, which is useful for identifying broad functional and evolutionary relationships between sequences.  
+
+The UniRef databases are particularly useful for researchers conducting protein sequence analysis, phylogenetic studies, and other comparative genomics tasks. By reducing the redundancy of sequences, UniRef enables faster sequence similarity searches, more efficient computation, and easier identification of sequence relationships and annotations across a wide variety of organisms.  
 
