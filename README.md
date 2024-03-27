@@ -46,7 +46,15 @@ Predicting the fitness of a protein sequence and capturing the distribution of n
 ## Paper
 [ProGen2: Exploring the boundaries of protein language models](https://www.sciencedirect.com/science/article/abs/pii/S2405471223002727?via%3Dihub)  
 
-## progen2-oas
+## standard PROGEN2 models
+The standard PROGEN2 models are pretrained on a mixture of Uniref90 (Suzek et al., 2015) and BFD30 (Steinegger & Söding, 2018) databases.  
+Uniref90 are cluster representative sequences from UniprotKB at 90% sequence identity. The BFD30 dataset is approximately 1=3 the size of Uniref90, majority from metagenomic sources, commonly not full-length proteins, and clustered at 30% sequence identity.  
+
+## PROGEN2-BFD90 model
+
+For the PROGEN2-BFD90 model, Uniref90 is mixed with representative sequences with at least 3 cluster members after clustering UniprotKB, Metaclust, SRC, and MERC at 90% sequence identity. This BFD90 dataset is approximately twice the size as Uniref90. 
+
+## progen2-oas Model
 To train the antibody-specific PROGEN2-OAS, we collected unpaired antibody sequences from the Observed Antibody Space (OAS) database (Olsen et al., 2022a). OAS is a curated collection of
 1.5B antibody sequences from eighty immune repertoire sequencing studies, which contains heavy and light chain sequences from six species (humans, mice, rats, camel, rabbit, and rhesus). The
 sequences in OAS possess a significant degree of redundancy, due both to discrepancies in the sizes of its constituent studies, as well as the innate biological redundancy of antibody sequences within
@@ -55,4 +63,5 @@ Alignment coverage in Linclust was calculated with respect to the target sequenc
 
 All samples are provided to the model with a 1 or 2 character token concatenated at the N-terminal and C-terminal side of the sequence. Each sequence is then provided as-is and flipped. For a given
 batch, proteins are concatenated with others to fill the maximum token length during training.  
+
 
