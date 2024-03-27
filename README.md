@@ -54,7 +54,7 @@ Uniref90 are cluster representative sequences from UniprotKB at 90% sequence ide
 
 For the PROGEN2-BFD90 model, Uniref90 is mixed with representative sequences with at least 3 cluster members after clustering UniprotKB, Metaclust, SRC, and MERC at 90% sequence identity. This BFD90 dataset is approximately twice the size as Uniref90. 
 
-## progen2-oas Model
+## PROGEN2-OAS Model
 To train the antibody-specific PROGEN2-OAS, we collected unpaired antibody sequences from the Observed Antibody Space (OAS) database (Olsen et al., 2022a). OAS is a curated collection of
 1.5B antibody sequences from eighty immune repertoire sequencing studies, which contains heavy and light chain sequences from six species (humans, mice, rats, camel, rabbit, and rhesus). The
 sequences in OAS possess a significant degree of redundancy, due both to discrepancies in the sizes of its constituent studies, as well as the innate biological redundancy of antibody sequences within
