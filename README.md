@@ -53,3 +53,6 @@ sequences in OAS possess a significant degree of redundancy, due both to discrep
 organisms. To reduce this redundancy, we clustered the OAS sequences at 85% sequence identity using Linclust (Steinegger & Söding, 2018), yielding a set of 554M sequences for model training.
 Alignment coverage in Linclust was calculated with respect to the target sequence ("cov-mode 1"), with all other parameters set to their default values.  
 
+All samples are provided to the model with a 1 or 2 character token concatenated at the N-terminal and C-terminal side of the sequence. Each sequence is then provided as-is and flipped. For a given
+batch, proteins are concatenated with others to fill the maximum token length during training.  
+
