@@ -76,3 +76,10 @@ UniRef50: Clusters UniRef90 entries to achieve a similar clustering at a 50% seq
 
 The UniRef databases are particularly useful for researchers conducting protein sequence analysis, phylogenetic studies, and other comparative genomics tasks. By reducing the redundancy of sequences, UniRef enables faster sequence similarity searches, more efficient computation, and easier identification of sequence relationships and annotations across a wide variety of organisms.  
 
+## Does UniRef contain the viruses protein sequence？
+Yes, UniRef (Universal Protein Resource Reference Clusters) includes virus protein sequences. The UniProt Knowledgebase, from which UniRef derives its sequences, encompasses a wide range of protein sequences from various organisms, including viruses. By clustering sequences based on similarity, UniRef provides a comprehensive and non-redundant view of the protein sequence space, including those from viruses.
+
+The inclusion of viral protein sequences in UniRef makes it a valuable resource for virology research, including studies on virus structure, function, evolution, and interactions with host organisms. Researchers can use UniRef datasets to identify and analyze viral protein sequences, compare them with those of other viruses or host species, and explore evolutionary relationships.  
+
+The data in UniRef is periodically updated to include new sequences added to the UniProt database, ensuring that it remains a current and comprehensive resource for the scientific community, including those studying viruses.  
+
