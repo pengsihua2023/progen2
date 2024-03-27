@@ -84,5 +84,5 @@ The inclusion of viral protein sequences in UniRef makes it a valuable resource 
 The data in UniRef is periodically updated to include new sequences added to the UniProt database, ensuring that it remains a current and comprehensive resource for the scientific community, including those studying viruses.  
 
 ## Table 1 in the paper
-![Table 1](/images/Table-1.png)  
+![Table 1](/image/Table-1.png)  
 
