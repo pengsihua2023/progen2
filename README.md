@@ -46,7 +46,7 @@ Predicting the fitness of a protein sequence and capturing the distribution of n
 ## Paper
 [ProGen2: Exploring the boundaries of protein language models](https://www.sciencedirect.com/science/article/abs/pii/S2405471223002727?via%3Dihub)  
 
-## standard PROGEN2 models
+## Standard PROGEN2 models
 The standard PROGEN2 models are pretrained on a mixture of Uniref90 (Suzek et al., 2015) and BFD30 (Steinegger & Söding, 2018) databases.  
 Uniref90 are cluster representative sequences from UniprotKB at 90% sequence identity. The BFD30 dataset is approximately 1=3 the size of Uniref90, majority from metagenomic sources, commonly not full-length proteins, and clustered at 30% sequence identity.  
 
