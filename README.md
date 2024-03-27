@@ -46,3 +46,10 @@ Predicting the fitness of a protein sequence and capturing the distribution of n
 ## Paper
 [ProGen2: Exploring the boundaries of protein language models](https://www.sciencedirect.com/science/article/abs/pii/S2405471223002727?via%3Dihub)  
 
+## progen2-oas
+To train the antibody-specific PROGEN2-OAS, we collected unpaired antibody sequences from the Observed Antibody Space (OAS) database (Olsen et al., 2022a). OAS is a curated collection of
+1.5B antibody sequences from eighty immune repertoire sequencing studies, which contains heavy and light chain sequences from six species (humans, mice, rats, camel, rabbit, and rhesus). The
+sequences in OAS possess a significant degree of redundancy, due both to discrepancies in the sizes of its constituent studies, as well as the innate biological redundancy of antibody sequences within
+organisms. To reduce this redundancy, we clustered the OAS sequences at 85% sequence identity using Linclust (Steinegger & Söding, 2018), yielding a set of 554M sequences for model training.
+Alignment coverage in Linclust was calculated with respect to the target sequence ("cov-mode 1"), with all other parameters set to their default values.  
+
