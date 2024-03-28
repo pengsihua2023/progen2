@@ -54,6 +54,12 @@ Uniref90 are cluster representative sequences from UniprotKB at 90% sequence ide
 
 For the PROGEN2-BFD90 model, Uniref90 is mixed with representative sequences with at least 3 cluster members after clustering UniprotKB, Metaclust, SRC, and MERC at 90% sequence identity. This BFD90 dataset is approximately twice the size as Uniref90. 
 
+## BFD database
+BFD was created by clustering 2.5 billion protein sequences from Uniprot/TrEMBL+Swissprot, Metaclust and Soil Reference Catalog Marine Eukaryotic Reference Catalog assembled by Plass.  
+We clustered sequences that could be aligned to a longer sequence with 90% of their residues and a sequence identity of 30% using Linclust/MMseqs2 --cov-mode 1 --min-seq-id 0.3.  
+We removed all clusters with less than three sequences and turned the database into an HH-suite3 database using the Uniclust pipeline.  
+[Download BFD](https://bfd.mmseqs.com/)
+
 ## PROGEN2-OAS Model
 To train the antibody-specific PROGEN2-OAS, we collected unpaired antibody sequences from the Observed Antibody Space (OAS) database (Olsen et al., 2022a). OAS is a curated collection of
 1.5B antibody sequences from eighty immune repertoire sequencing studies, which contains heavy and light chain sequences from six species (humans, mice, rats, camel, rabbit, and rhesus). The
