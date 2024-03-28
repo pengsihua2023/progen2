@@ -69,6 +69,13 @@ Alignment coverage in Linclust was calculated with respect to the target sequenc
 
 All samples are provided to the model with a 1 or 2 character token concatenated at the N-terminal and C-terminal side of the sequence. Each sequence is then provided as-is and flipped. For a given
 batch, proteins are concatenated with others to fill the maximum token length during training.  
+## OAS database
+The Observed Antibody Space database, or OAS, is a project to collect and annotate immune repertoires for use in large-scale analysis. It currently contains over one billion sequences, from over 80 different studies. These repertoires cover diverse immune states, organisms (primarily human and mouse), and individuals.  
+The data has been sorted, cleaned, annotated, translated, and numbered, and we have made all of it available for download on this website. You can either download the entire dataset, or you can download a subset of sequences by using our search forms, which allow you to filter the sequences based on attributes such as chain type, species, and disease state.  
+OAS now contains both unpaired and paired antibody sequences; click the links above to access the search forms for each.  
+We aim to regularly update OAS with newly released BCR datasets, and hope this resource will facilitate data mining of immune repertoires for improved understanding of the immune system and development of better biotherapeutics.  
+[OAS link](https://opig.stats.ox.ac.uk/webapps/oas/)  
+
 ## What is Uniref?
 UniRef (Universal Protein Resource Reference Clusters) provides clustered sets of sequences from the UniProt Knowledgebase (including isoforms) and selected UniParc records. This resource is designed to offer a compact, comprehensive, and non-redundant representation of the UniProt databases. The main goal of UniRef is to reduce the redundancy of sequences in the UniProt databases to speed up sequence searches and analyses while maintaining the coverage of the sequence space.  
 
